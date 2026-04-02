@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.background-blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 210, 255, 0.1);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    top: -100px;
+    right: -50px;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Khusus kartu hasil agar warnanya agak beda */
+.result-card {
+    border-top: 8px solid #28a745;
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.status-title {
+    color: #28a745;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #00d2ff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.alert-success {
+    background: rgba(40, 167, 69, 0.2);
+    border: 1px solid #28a745;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+.univ-info {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.65rem;
+    opacity: 0.5;
+}
